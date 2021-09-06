@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="Refresh" content="0.1" />
+
+</head>
+<body>
+<p>
+    <li>A new terminal:    </li>
+    <li>Select cmd line</li>
+    <ol type="a">
+    <li>For Scan</li>
+    <li>For Mining</li>
+    <li>For Hack</li>
+    </ol>
+</p>
+<button onclick="displayDate()">Время?</button>
+<h1 name="box" id="am">Translating</h1>
+<form>
+    <p> Nmap : <input id="button1" type="button" name="Go" onclick="draw()"></p>
+    <p>Get   : <input type="password" id="checking"></p>
+</form>
+
+                                <canvas id="myCanvas" width="400" height="400"
+                                            >
+                                            Ваш браузер не поддерживает Canvas
+                                           </canvas>
+                                            <script>
+                                            var canvas = document.getElementById("myCanvas"), 
+                                            context = canvas.getContext("2d");
+                                            context.beginPath();
+                                            
+                                            let r1 = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
+                                            let r2 = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
+                                            let r3 = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
+                                            let r4 = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
+                                            let mascolor = ["green","brown", "yellow", "blue", "red"];
+                                            let rnd = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+
+                                            context.moveTo(r2, r4);
+                                            context.lineTo(r1, r2);
+                                            context.lineTo(r2, r3);
+                                            context.lineTo(r4, r1);
+                                            context.closePath();
+                                            
+                                            context.strokeStyle = mascolor[rnd];
+                                            context.stroke();
+                                          </script>
+<div>
+    <p>Hello World</p>
+</div>
+
+</body>
+</html>
